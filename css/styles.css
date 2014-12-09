@@ -2,12 +2,22 @@
 Colors
 ******************************/
 
+body {
+	background: silver;
+	background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+}
+
 .container {
 	background-color: #D1D3D4;
 }
 
 a {
-	color: white;
+	color: #fff;
+}
+
+a:hover {
+	color: #03B9FF;
+	transition: color .5s ease-in-out;
 }
 
 .main-content {
@@ -65,6 +75,35 @@ li {
 	list-style: none;
 	padding: 40px 20px 20px 0;
 }
+
+.logo {
+	height: 50px;
+	width: auto;
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 19px;
+	opacity: 1;
+}
+
+.logo:hover {
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+}
+
+.logohover {
+	height: 50px;
+	width: auto;
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 19px;
+	opacity: 0;
+}
+
+.logohover:hover {
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+}
+
 
 /***************************** 
 Header
@@ -148,6 +187,7 @@ Footer
 
 footer {
 	text-align: left;
+	padding-bottom: 10px;
 }
 
 footer p {
@@ -156,4 +196,8 @@ footer p {
 
 .social-media {
 	word-spacing: 7px;
+}
+
+.social-media a:hover {
+	opacity: .4;
 }
